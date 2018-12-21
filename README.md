@@ -2,7 +2,9 @@
 
 ## Introduction
 
+When using Ansible, it is sometimes handy to use the [`ansible-galaxy`](https://docs.ansible.com/ansible/latest/reference_appendices/galaxy.html#installing-multiple-roles-from-a-file) command and its `requirements.yml` file to download an Ansible role set.
 
+The script `change_requirements.pl` allows you to manipulate this requirements.yml file by changing the GIT protocol to https or SSH mode.
 
 
 ## Requirement
@@ -26,6 +28,7 @@
 
 ## Examples
 
+By using `change_requirements.pl`, you should redirect output into a file, for example : `requirements_https.yml` or `requirements_ssh.yml`.
 
 **Example1 (https) :**
 
