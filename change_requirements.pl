@@ -42,7 +42,7 @@ or die("Error in command line arguments\n");
 
 if ( ($help) || (($mode ne "ssh") && ($mode ne "https")) || ($ARGV[0] eq "") )
 {
-  print"./change_requirements.pl --mode <ssh|https> [--login <login> --password <pass> if https] requirements.yml
+  print"./change_requirements.pl --mode <ssh|https> [--login <login> --password <pass> or --ask-password if https] requirements.yml
                          [--verbose] [--skip]\n";
   exit;
 }

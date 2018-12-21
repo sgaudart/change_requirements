@@ -20,7 +20,7 @@
 ## Utilization
 
 ```
-./change_requirements.pl --mode <ssh|https> [--login <login> --password <pass> if https] requirements.yml
+./change_requirements.pl --mode <ssh|https> [--login <login> --password <pass> or --ask-password if https] requirements.yml
                          [--verbose]
 ```
 
@@ -59,7 +59,7 @@
 **Example3 (with login) :**
 
 ```
-./change_requirements.pl --mode https requirements.yml --login sgaudart
+./change_requirements.pl --mode https requirements.yml --login sgaudart (--ask-password)
 ---
 - src: https://sgaudart@gitlab.home.fr/myproject/ansible-role-icinga2.git
   scm: git
